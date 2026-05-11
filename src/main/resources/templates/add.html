@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Add Task</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+	<header class="header">
+		<p class="header-title"><strong>TaskManager</strong></p>
+	</header>
+	<h2>Add task</h2>
+	<section>
+		<form th:action="@{/add}" th:object="${task}" method="post" class="task-form">
+	    	<div class="name">
+				<label for="task_name">Task name:</label>
+				<input type="text" id="name" name="name" value="Name here" th:field="*{name}" required>
+	        </div>
+	    	<div class="date">
+			<label for="date">Enter a date:</label>
+			<input type="date" id="date" name="date" min="2026-05-07" th:field="*{date}" required>
+	    	</div>
+	    	<div class="status">
+	        	<label for="status" class="form-label">Status</label>
+	            <select class="form-select" id="status" th:field="*{status}">
+					<option value="Pending">Pending</option>
+					<option value="In Progress">In Progress</option>
+						<option value="Completed">Completed</option>
+	        	</select>
+	    	</div>
+				<input type="submit" value="Done">
+		</form>
+	</section>
+	<footer class="footer">
+        <div class="footer__captions">
+            <p class="boot">Built with Spring Boot</p>
+            <p class="render">Deployed using Render</p>
+        </div>
+    </footer>
+</body>
+</html>

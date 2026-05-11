@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Task Manager</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+	<header class="header">
+		<p class="header-title"><strong>TaskManager</strong></p>
+	    <nav class="nav">
+	    	<a th:href="@{/add}" class="add-button">Add New</a>
+	    </nav>
+	</header>
+
+	<div class="row">
+  		<div class="tasks">
+			<table class="table table-striped">
+		        <thead>
+		        <tr>
+		            <th>Title</th>
+		            <th>Date</th>
+		            <th>Status</th>
+		            <th>Update</th>
+		        </tr>
+		        </thead>
+		        <tbody>
+		        <tr th:each="task : ${tasks}">
+		            <td th:text="${task.name}"></td>
+		            <td th:text="${task.date}"></td>
+		            <td th:text="${task.status}"></td>
+		            <td>
+						<a th:href="@{'/edit/' + ${task.id}}" class="edit-button">Edit</a>
+		                <form th:action="@{'/delete/' + ${task.id}}" method="post" style="display:inline;" class="delete">
+		                    <button type="submit" class="delete-button">Delete</button>
+		                </form>
+		            </td>
+		        </tr>
+		        </tbody>
+		    </table>
+		</div>
+	</div>
+
+	<footer class="footer">
+        <div class="footer__captions">
+            <p class="boot">Built with Spring Boot</p>
+            <p class="render">Deployed using Render</p>
+        </div>
+    </footer>
+</body>
+</html>

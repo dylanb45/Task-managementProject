@@ -1,0 +1,224 @@
+.header-title {
+    text-align: left;
+    font-size: 30px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    width: 350px;
+    margin-top: 40px;
+    margin-bottom: 34px;
+    margin-left: 96px;
+    margin-right: 61px;
+}
+
+.nav {
+    float: right;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 600px;
+    height:auto;
+}
+
+.footer__captions {
+    display:grid;
+    padding-left: 200px;
+}
+
+.boot, .render {
+    text-align: left;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	justify-content: right;
+    color: black;
+}
+
+.page-header {
+    font-size: 35px;
+}
+
+table {
+    border:4px solid black;
+    border-collapse: collapse;
+    width: 65%;
+    margin-left: auto;
+    margin-right: 275px;
+}
+
+tr:hover {
+    background-color: #b7b7b7;
+}
+
+tr:active {
+    background-color: #b7b7b7;
+}
+
+th {
+    border:4px solid black;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+    padding: 8px;
+}
+
+td {
+    border:2px solid black;
+    font-family: Roboto, sans-serif;
+    padding: 8px;
+}
+
+@media (min-width: 768px) {
+    header {
+        align-items: center;
+        display: flex;
+    }
+    footer {
+        align-items: center;
+        display: flex;
+    }
+    .intro {
+        width: 50%;
+    }
+}
+
+.header {
+    height: 115px;
+    background: #949494;
+    width:auto;
+    border-bottom: 2px solid #000000;
+	margin-bottom: 54px;
+}
+
+.footer {
+    background: #949494;
+    border-top: 2px solid #000000;
+    width: auto;
+    height: 243px;
+    margin-top: 54px;
+}
+
+.intro {
+    padding-left: 25px;
+}
+
+.delete {
+	
+}
+
+.delete-button {
+	background-color: darkgreen;
+	  border: none;
+	  color: white;
+	  padding: 10px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+
+.delete-button:hover {
+	background-color: red;
+	  border: none;
+	  color: white;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+
+.edit-button, .add-button {
+	background-color: darkgreen;
+	  border: none;
+	  color: white;
+	  padding: 10px 25px;
+	  text-align: center;
+	  text-decoration: none;
+	  font-family: Roboto, sans-serif;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+
+.edit-button:hover, .add-button:hover {
+	background-color: lightgreen;
+	  border: none;
+	  color: black;
+	  text-align: center;
+	  text-decoration: none;
+	  font-family: Roboto, sans-serif;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+
+.task-form {
+	 border-radius: 5px;
+	 background-color: #f2f2f2;
+	 padding: 20px;
+	 border:4px solid black;
+	 border-collapse: collapse;
+	 width: 30%;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  	width: 100%;
+  	padding: 12px;
+ 	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=date], select {
+  	width: 100%;
+  	padding: 12px;
+ 	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+
+input[type=submit] {
+  	width: 100%;
+  	background-color: lightgrey;
+  	color: black;
+  	padding: 14px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  	background-color: grey;
+}
+
+.tasks-table {
+	background-color: #aaa;
+}
+
+h2 {
+	text-align: center;
+	text-decoration-line: underline;
+	font-family: Roboto, sans-serif;
+}
+
+.name, .date, .status {
+	font-family: Roboto, sans-serif;
+}
