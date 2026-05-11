@@ -47,6 +47,7 @@ table {
     width: 65%;
     margin-left: auto;
     margin-right: 275px;
+	background-color: #aaa;
 }
 
 tr:hover {
